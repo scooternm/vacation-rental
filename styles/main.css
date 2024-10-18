@@ -1,0 +1,24 @@
+body{
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    background-color: forestgreen;
+}
+nav li{
+    display: inline-block;
+    margin: 1rem;
+}
+nav li:hover a{
+    color:white;
+    text-decoration: underline;
+}
+nav a{
+    color: goldenrod
+}
+main{
+    padding: 1.5rem;
+}
+footer{
+    text-align: center;
+}

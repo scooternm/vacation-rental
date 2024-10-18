@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overnight</title>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/overnight.js"></script>
+</head>
+<body>
+    <script>
+        document.write(header);
+    </script>
+    <main> 
+        <fieldset>
+        <h1>Overnight</h1>
+        <form id="overnightForm">
+            <input type="text" id="firstName" placeholder="First name"><br>
+            <input type="text" id="lastName" placeholder="Last name"><br>
+            <input type="text" id="email" placeholder="Email"><br>
+            <input type="date" id="when" name=""><br>
+            <input type="number" id="numOfDays" max="28"><br>
+
+        <h4>Room Type</h4>
+        <fieldset>
+        <label>
+            <input type="radio" name="roomType" id="king"> King
+        </label>
+        <label>
+            <input type="radio" name="roomType" id="queen">Queen
+        </label>
+        <label>
+            <input type="radio" name="roomType" id="suite"> 2 BR Suite
+        </label>
+        </fieldset>
+        <label>
+            <input type="number" value="0" id="adults" max="4"> Adults
+            <input type="number" value="0" id="kids" max="4"> Children<br>
+        </label>
+        <label>
+            Are you a AAA or Military member?
+            <input type="radio" name="member" id="yes"> Yes
+            <input type="radio" name="member" id="no"> No<br>
+        </label>
+        <div id="discountTypeSection" style="display: none;">
+            <label>
+                <input type="radio" name="discountType" id="aaa" value="aaa"> AAA
+            </label>
+            <label>
+                <input type="radio" name="discountType" id="military" value="military"> Military
+            </label>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+        <div id="output">?</div>
+        </fieldset>
+</main>
+<footer>
+    Copyright 2024
+</footer>
+</body>
+</html>
